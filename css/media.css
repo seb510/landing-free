@@ -100,17 +100,23 @@
   }
 }
 @media (max-width: 700px){
+  .header {
+    position: relative;
+    z-index: 20;
+  }
+  .header__fixed {
+    min-height: auto;
+    padding: 20px 0;
+  }
   .header__phone {
     padding: 0 20px 0 20px;
   }
   .header__btn{
-    float: none;
+    margin: 10px auto;
   }
   .header__contacts{
     text-align: center;
-  }
-  .header__btn:before{
-    display: none;
+    flex-direction: column;
   }
 
   .footer__info .header__btn:before{
